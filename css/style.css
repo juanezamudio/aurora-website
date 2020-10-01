@@ -1,6 +1,14 @@
 html,
 body {
     scroll-snap-type: y mandatory;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 h1 {
@@ -26,6 +34,7 @@ h3,
 .navbar.navbar-expand-lg.navbar-dark {
     position: fixed;
     z-index: 2;
+    width: 100vw;
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -107,6 +116,16 @@ pre {
     z-index: 1;
     opacity: 50%;
 }
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+
+/* @media only screen and (min-width: 768px) {
+    #maindots {
+        width: 100vw;
+    }
+} */
 
 #clubquarantine,
 #betweenthetides {
