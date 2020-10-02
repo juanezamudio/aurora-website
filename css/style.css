@@ -59,7 +59,7 @@ div div a {
     padding: 0.6vw 3vw 0.7vw;
 }
 
-.navbar-brand.navbar-brand {
+.navbar-brand {
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -67,6 +67,7 @@ div div a {
     font-weight: 600;
     line-height: 23px;
     color: white;
+    padding-left: 1em;
 }
 
 p {
@@ -137,4 +138,64 @@ pre {
     left: 0;
     z-index: -2;
     scroll-snap-align: start;
+}
+
+.club-quarantine-image {
+    position: absolute;
+    left: 37.5vw;
+    top: 60vh;
+    width: 25vw;
+    z-index: 2;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .club-quarantine-image {
+        left: 20vw;
+        width: 60vw;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up)
+
+@media only screen and (min-width: 600px) {
+    .club-quarantine-image {
+        width: 100vw;
+    }
+} */
+
+.carousel-navigation {
+    position: fixed;
+    top: 40vh;
+    left: 92.5vw;
+    text-align: center;
+    z-index: 1;
+}
+
+.carousel-navigation-list {
+    list-style-type: none;
+}
+
+.carousel-navigation-item {
+    margin-bottom: 1em;
+}
+
+.carousel-navigation-button {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: white;
+    opacity: 75%;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+}
+
+.carousel-navigation-button:hover {
+    opacity: 100%;
 }
